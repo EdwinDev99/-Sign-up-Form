@@ -9,31 +9,33 @@
 <body> 
     <div class="container">
         <div class="container-img">
-            <img src="./imgs/odin-lined.png" alt="">
-            <h1>Odin</h1>
+            <div class="title">
+                <img src="./imgs/odin-lined.png" alt="">
+                <h1>Odin</h1>
+            </div>
         </div>
         <div class="modal" >
             <h2>Lest's do this!</h2>
             <form class="container-content" action="">
                 <div class="column">
                     <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required minlength="3">
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email" required minlength="3" >
 
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Password">
+                    <input type="password" name="password" id="password" placeholder="Password" required minlength="3"> 
                 </div>
                 <div class="column">
                     <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" required minlength="3">
 
                     <label for="phone-number">Phone Number</label>
-                    <input type="text" name="phone-number" id="phone-number" placeholder="Phone-Number">
+                    <input type="text" name="phone-number" id="phone-number" placeholder="Phone-Number" required minlength="9" maxlength="9">
 
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required minlength="8" maxlength="10">
                 </div>   
             </form> 
         </div>
